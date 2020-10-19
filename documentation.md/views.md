@@ -11,6 +11,11 @@
   - Intervals
 - Listing can be edited (link detail view)
 - an empty listing allows the creation of a new bike
+- List of all accessories
+- Each listing containts the following information
+  - Name
+  - Description
+  - Category (tool, expendable items, spare parts)
 
 ### Detail
 
