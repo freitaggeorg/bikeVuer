@@ -1,87 +1,92 @@
-## Überblick über die Ansichten in BikeVuer
+## Views in BikeVuer
 
-### Übersicht
+### Overview
 
-- Auflistung aller Räder 
-- Jede Auflistung enthält folgenden Informationen 
-  - Bild
+- Listing of all bikes 
+- Each listing contains the following information 
+  - Picture
   - Name
-  - Hersteller
-  - Alter
-  - Intervalle
-- Auflistung kann editiert werden (Link Detailansicht)
-- eine leere Auflistung ermöglicht das Anlegen eines neuen Rades
+  - Manufacturer
+  - Age
+  - Intervals
+- Listing can be edited (link detail view)
+- an empty listing allows the creation of a new bike
 
 ### Detail
 
-- Anzeige der folgenden Detailinformationen
-  - Kerndaten
-    - Hersteller
-    - Modell
-    - Preis
-    - Verkäufer
+- Display of the following detailed information
+  - Core data
+    - Manufacturer
+    - Model
+    - Price
+    - Seller
     - Name
-    - Adresse
-    - Kontakt
-    - Kaufdatum
-    - Notizen
-  - Intervalle
-    - Wechselinterval	
-    - Installationsdatum	
-  - Komponenten
-    - Räder
-      - Laufräder
+    - Address
+    - contact
+    - Date of purchase
+    - Notes
+  - Intervals
+    - Change interval	
+    - Date of installation	
+  - Components
+    - Wheels
+      - Impellers
         - Name
-        - Felgenband			
-      - Schläuche
-        - Größe
-          - Breite
-          - Größe
-          - Ventil
-        - Mäntel
-          - Name
-          - Breite
-      - Schaltung
-        - Kettenschaltung
-          - Ritzelgrößen
-        - Nabenschaltung
-          - Wartungsintervalle
-      - Kette
-        - Anzahl Glieder
-        - Hersteller
-        - Vorgaben Wechselinterval
-        - Schmiermittel
-      - Bremse
+        - Rim Tape			
+      - Tubes
+        - Size
+        - Width
+        - Valve
+      - Coats
         - Name
-        - Bremsflüssigkeit
-          - Name
-          - Wechselinterval
-      - Dämpfer
+        - Width
+    - Gearshift
+      - chain gear system
+        - Sprocket sizes
+      - Hub gears
+        - Maintenance intervals
+    - Chain
+      - Number of links
+      - Manufacturer
+      - Specifications change interval
+      - Lubricants
+    - Brake
+      - Name
+      - Brake Fluid
         - Name
-        - Hub
-        - Reiningungsinterval
-      - Geometrie
+        - Change interval
+    - Damper
+      - Name
+      - Hub
+      - Cleaning Interval
+    - Geometry
 
-- leere Auflistung, um neue Detailinformationen hinzuzufügen 
-- Bearbeitung der Auflistung in der aktuellen Darstellung (keine separate Ansicht)
-- Entfernen einer Detailinformation
+- empty listing to add new detailed information 
+- Editing the listing in the current view (no separate view)
+- Remove a detail information
 
-### Zubehör
+### Accessories
 
-- Auflistung von Informationen zum Zubehör
-  - Werkzeug
+- Listing of information on accessories
+  - Tool
     - Name 
-    - Beschreibung
-  - Verbrauchsmaterial (Reinigungsmittel, Schmiermittel, ...)
+    - Description
+  - Consumables (cleaning agents, lubricants, ...)
     - Name 
-    - Beschreibung
-  - Ersatzteile
+    - Description
+  - Spare parts
     - Name
-    - Beschreibung
-    - Zuordnung Räder
-- Schaltfläche zur Bearbeitung der Auflistung
-  - Änderung der Inhalte
-  - Zuordnung durch Auswahl eigepflegter Räder (mit Name)
-- Leerer Eintrag zum Anlegen neuen Zubehörs
-  - Zuordnung zur Kategorie (Werkzeug, Verbrauchsmaterial, Ersatzteile)
+    - Description
+    - Assignment of wheels
+- Button for editing the listing
+  - Change of contents
+  - Assignment by selection of self-maintained wheels (with name)
+- Empty entry to create new accessories
+  - Assignment to category (tools, consumables, spare parts)
 
+
+
+## Linking
+
+- Overview <--> Detail
+- Overview <--> Accessories

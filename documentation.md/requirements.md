@@ -1,29 +1,3 @@
-## Anforderungsübersicht
-
-### Muss-Kriterien
-
-- Darstellung von eingeplegten Fahrrädern zur Übersicht
-- Darstellung der zu den Fahrrädern zugehörigen Detailinformationen
-- Anlegen von neuen Fahrrädern
-- Anlegen von Komponenten
-- Anlegen von Zubehör
-- Eingabe von Detailinformationen in Form von Text und Daten
-- Bearbeitung von (Detail-) Informationen
-
-### Kann-Kriterien
-
-- Löschen von Fahrädern
-- Löschen von Komponenten
-- Löschen von Zubehör
-- Visuelle Darstellung von Intervallen
-- Sortierung der Intervallen nach Ablaufdaten
-- Filterung von Rädern und Komponenten
-- Upload von Bildern
-- Anzeige von Bildern
-- Entfernen von Bildern
-
-
-
 ## Request overview
 
 ### Mandatory criteria
