@@ -1,4 +1,5 @@
 <template>
+  <div><i class="fas fa-biking fa-flip-horizontal"></i> BikeVuer <i class="fas fa-biking "></i></div>
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/accessories">Accessories</router-link>

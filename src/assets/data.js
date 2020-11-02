@@ -1,4 +1,4 @@
-{
+export default {
     "bikes": [
         {
             "coreData": {
@@ -19,7 +19,7 @@
                     "web": "www.yt-industries.com"
                 },
                 "date_of_pruchase": "2020/09/05",
-                "image": "./assetts/02_IZZO_CF_Pro_Ghostship_Green.jpg",
+                "image": require("@/assets/02_IZZO_CF_Pro_Ghostship_Green.jpg"),
                 "notes": ""
             },
             "components": {
