@@ -7,8 +7,11 @@
       <div class="textbox">Model: {{ model }}</div>
       <div class="textbox">Hersteller: {{ manufacturer }}</div>
       <div class="textbox">Year: {{ year }}</div>
-      <div><progress value="70" max="100"></progress></div>
-      <Progress></Progress>
+      <Progress
+        label="Tubeless Intervall"
+        :start="this.dataSet.components.wheels.tires.front.tube.last_refill"
+        :interval="this.dataSet.components.wheels.tires.front.tube.interval"
+      ></Progress>
     </div>
   </div>
 </template>
@@ -19,18 +22,18 @@ import Progress from "@/components/Progress.vue";
 export default {
   name: "BikeCard",
   components: {
-    Progress
+    Progress,
   },
   data() {
     return {
       model: "Testmodel",
       manufacturer: "Testhersteller",
       year: "2020/01/01",
-      imagePath: ""
+      imagePath: "",
     };
   },
   props: {
-    dataSet: Object
+    dataSet: Object,
   },
   methods: {
     setData() {
@@ -38,11 +41,11 @@ export default {
       this.manufacturer = this.dataSet.coreData.manufacturer;
       this.year = this.dataSet.coreData.date_of_pruchase;
       this.imagePath = this.dataSet.coreData.image;
-    }
+    },
   },
   mounted() {
     this.setData();
-  }
+  },
 };
 </script>
 
