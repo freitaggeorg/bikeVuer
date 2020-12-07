@@ -1,18 +1,15 @@
 <template>
   <div class="home">
     <div class="cardContainer">
+      <BikeCard
+        :dataSet="bikes[0]"
+        @click="this.$router.push({ name: 'Details', params: { cardID: 0 } })"
+      ></BikeCard>
       <BikeCard :dataSet="bikes[0]"></BikeCard>
       <BikeCard :dataSet="bikes[0]"></BikeCard>
       <BikeCard :dataSet="bikes[0]"></BikeCard>
       <BikeCard :dataSet="bikes[0]"></BikeCard>
       <BikeCard :dataSet="bikes[0]"></BikeCard>
-      <BikeCard :dataSet="bikes[0]"></BikeCard>
-    </div>
-    <h1>Bikes</h1>
-    <div v-for="(bike, key) in bikes" :key="key">
-      <img :src="bike.coreData.image" width="200" height="400" />
-      <div>{{ bike.coreData.model }} from {{ bike.coreData.manufacturer }}</div>
-      <div>Year: {{ bike.coreData.date_of_pruchase }}</div>
     </div>
   </div>
 </template>
@@ -26,14 +23,14 @@ import json from "@/assets/data.js";
 export default {
   name: "Home",
   components: {
-    BikeCard
+    BikeCard,
   },
   data() {
     return {
-      bikes: json.bikes
+      bikes: json.bikes,
     };
   },
-  mounted() {}
+  mounted() {},
 };
 </script>
 
